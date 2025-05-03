@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1HE54oKXwbn4P7zi5p2iRiGoWZTjoyUUY
 """
 
-from PIL import Image
+from PIL import Image, ImageEnhance, ImageOps, ImageFilter 
 
 # Paths to the uploaded floor and wall images
 wall_path = "wall.png"
@@ -39,8 +39,6 @@ combined_background.save("combined_wall_floor_background.png")
 
 # Show the result
 combined_background.show()
-
-from PIL import Image
 
 # Paths to the car mask and the background image
 car_mask_path = 'car_mask_6.png'  # Replace with your car mask file path
@@ -76,8 +74,6 @@ background.paste(resized_car, (x_offset, y_offset), mask=resized_car_mask)
 # Save the final image with the car properly sized and positioned
 background.save('final_image_peeka.png')
 background.show()
-
-from PIL import Image, ImageEnhance, ImageOps, ImageFilter  # Added ImageFilter
 
 # Load the car image (the second image)
 car_image_path = 'final_image_peeka.png'  # Path to the car image
