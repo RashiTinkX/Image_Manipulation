@@ -24,7 +24,7 @@ You can install Pillow using pip:
 ```bash
 pip install Pillow
 ```
-*   The script includes code for mounting **Google Drive**, suggesting it may be intended for execution in a **Google Colab environment**. If running locally, the Google Drive part is not needed.
+*   The script includes code for mounting **Google Drive**, for execution in a **Google Colab environment**. If running locally, the Google Drive part is not needed.
 
 ## Input Files
 
